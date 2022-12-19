@@ -1,8 +1,8 @@
 const NavRoutePaths = {
-    HOME: "/",
-    ROCKETS: "/rockets",
-    MISSION: '/mission',
-    PROFILE: '/myprofile'
-}
+  HOME: '/',
+  ROCKETS: '/rockets',
+  MISSION: '/mission',
+  PROFILE: '/myprofile',
+};
 
-export default NavRoutePaths
+export default NavRoutePaths;

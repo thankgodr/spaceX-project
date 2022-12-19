@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path={NavRoutePaths.HOME} element={<di>Home</di>} />
         <Route path={NavRoutePaths.MISSION} element={<div>Mission</div>} />
-        <Route path={NavRoutePaths.ROCKETS} element={<di>Rockets</di>} />
+        <Route path={NavRoutePaths.ROCKETS} element={<div>Rockets</div>} />
         <Route path={NavRoutePaths.PROFILE} element={<div>Profile</div>} />
       </Routes>
     </div>
