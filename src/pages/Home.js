@@ -12,6 +12,7 @@ const Home = () => {
                 title={rocket.name}
                 description={rocket.description}
                 key={rocket.id}
+                reserved={rocket.reserved}
             />)}
         </Container>
   );
