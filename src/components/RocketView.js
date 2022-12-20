@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import { Button, Col, Row } from 'react-bootstrap';
+import {
+  Badge, Button, Col, Row,
+} from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { RESERVE_ROCKET, CANCEL_RESERVATION, reserveAction } from '../redux/slice/rockets/rockets';
 
@@ -15,8 +17,8 @@ const RocketView = (props) => {
                 <img src={props.image} className="rocket-image img-fluid" />
             </Col>
             <Col md={8} style={{ textAlign: 'left' }}>
-                <h4 className="rocket-title">{props.title}</h4>
-                <p>{props.description}</p>
+                <h4 className="rocket-title"> {props.title}</h4>
+                <p>{props.reserved && <Badge bg="success">Reserved</Badge>} {props.description}</p>
                 {
                     !props.reserved && <Button onClick={() => {
                       dispatch(reserveAction(acionParam(props.id, RESERVE_ROCKET)));

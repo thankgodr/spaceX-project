@@ -24,15 +24,13 @@ const Header = () => {
                     <Nav className="me-auto">
                     </Nav>
                     <Nav>
-                        <Nav.Link>
-                            <NavLink to={NavRoutePaths.HOME}>Rockets </NavLink>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <NavLink to={NavRoutePaths.MISSION}>Missions </NavLink>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <NavLink to={NavRoutePaths.PROFILE}>My Profile </NavLink>
-                        </Nav.Link>
+
+                        <NavLink role="button" className="nav-link" to={NavRoutePaths.HOME}>Rockets </NavLink>
+
+                        <NavLink role="button" className="nav-link" tabindex="0" to={NavRoutePaths.MISSION}>Missions </NavLink>
+
+                        <NavLink role="button" className="nav-link" to={NavRoutePaths.PROFILE}>My Profile </NavLink>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
