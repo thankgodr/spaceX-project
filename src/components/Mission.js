@@ -8,7 +8,6 @@ const Mission = (props) => {
   const dispatch = useDispatch();
   const updateClickHandler = () => {
     dispatch(reserveMissionAction(amission.id));
-    console.log('mission updated');
   };
   if ((counter % 2) > 0) {
     return (
@@ -28,7 +27,7 @@ const Mission = (props) => {
         <td className="td_title">{ amission.name }</td>
         <td className="td_description">{ amission.description }</td>
         <td className="td_actions">
-            <button className="button_mission_status">{amission.reserved ? 'Member' : 'not a member'}</button>
+            <button className="button_mission_status">{amission.reserved ? 'Active Member' : 'not a member'}</button>
             <button className="button_mission_join"onClick={updateClickHandler}>{amission.reserved ? 'Leave Mission' : 'Join Mission'}</button>
         </td>
       </tr>

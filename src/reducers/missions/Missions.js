@@ -22,7 +22,6 @@ const missionReducer = (state = initialState, action) => {
   switch (action.type) {
     case MISSION_GETTED: return (state === initialState) ? action.payload : state;
     case MISSION_STATUS_UPDATED: {
-      console.log('statut being updated');
       return state.map((mission) => {
         if (mission.id !== action.payload) {
           return mission;
