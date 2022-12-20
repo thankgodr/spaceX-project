@@ -37,3 +37,52 @@
     transform: rotate(360deg);
   }
 }
+
+.mission_Container{
+  font-family: Montserrat,sans-serif;
+  padding: 1rem;
+
+	
+}
+.mission_table_title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem .5rem .5rem;
+}
+tr
+{
+  border: 1px solid #f5f5f5;
+}
+.td_title{
+	width: 15%;
+}
+.td_description{
+	width: 70%;
+}
+.td_actions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap:1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.impair{
+  background-color: #f5f5f5;
+}
+.button_mission_status{
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+
+}
+.button_mission_join{
+  background-color: #0290ff;
+  color: #fff;
+  border-radius: 5px;
+}
+.button_mission_join:hover{
+  font-size: 1.2rem;
+}
+
