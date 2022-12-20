@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { reserveMissionAction } from '../reducers/missions/Missions';
+import { reserveMissionAction } from '../redux/slice/mission/Missions';
 
 const Mission = (props) => {
   const { amission, counter } = props;
@@ -12,25 +12,25 @@ const Mission = (props) => {
   if ((counter % 2) > 0) {
     return (
       <tr key={amission.id} className="impair">
-        <td className="td_title">{ amission.name }</td>
-        <td className="td_description">{ amission.description }</td>
+        <td className="td_title">{amission.name}</td>
+        <td className="td_description">{amission.description}</td>
         <td className="td_actions">
-            <button className="button_mission_status">{amission.reserved ? 'Member' : 'not a member'}</button>
-            <button className="button_mission_join"onClick={updateClickHandler}>{amission.reserved ? 'Leave Mission' : 'Join Mission'}</button>
+          <button className="button_mission_status">{amission.reserved ? 'Member' : 'not a member'}</button>
+          <button className="button_mission_join" onClick={updateClickHandler}>{amission.reserved ? 'Leave Mission' : 'Join Mission'}</button>
         </td>
       </tr>
     );
   }
 
   return (
-      <tr key={amission.id} className="pair">
-        <td className="td_title">{ amission.name }</td>
-        <td className="td_description">{ amission.description }</td>
-        <td className="td_actions">
-            <button className="button_mission_status">{amission.reserved ? 'Active Member' : 'not a member'}</button>
-            <button className="button_mission_join"onClick={updateClickHandler}>{amission.reserved ? 'Leave Mission' : 'Join Mission'}</button>
-        </td>
-      </tr>
+    <tr key={amission.id} className="pair">
+      <td className="td_title">{amission.name}</td>
+      <td className="td_description">{amission.description}</td>
+      <td className="td_actions">
+        <button className="button_mission_status">{amission.reserved ? 'Active Member' : 'not a member'}</button>
+        <button className="button_mission_join" onClick={updateClickHandler}>{amission.reserved ? 'Leave Mission' : 'Join Mission'}</button>
+      </td>
+    </tr>
   );
 };
 

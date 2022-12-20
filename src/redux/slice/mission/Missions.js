@@ -1,4 +1,4 @@
-import missionApi from '../../api/missionApi';
+import missionApi from '../../../api/missionApi';
 
 const MISSION_GETTED = 'MISSION_GETTED';
 const MISSION_STATUS_UPDATED = 'MISSION_STATUS_UPDATED';
