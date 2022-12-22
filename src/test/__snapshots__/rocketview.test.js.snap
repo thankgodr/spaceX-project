@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Rocketview Test rocketview omponent 1`] = `
+<div
+  className="row"
+  style={
+    Object {
+      "marginBottom": "25px",
+    }
+  }
+>
+  <div
+    className="col-md-4"
+  >
+    <img
+      className="rocket-image img-fluid"
+      src="http://"
+    />
+  </div>
+  <div
+    className="col-md-8"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
+  >
+    <h4
+      className="rocket-title"
+    >
+       
+      dum
+    </h4>
+    <p>
+       
+      hhdhd
+    </p>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Reservation
+    </button>
+  </div>
+</div>
+`;
