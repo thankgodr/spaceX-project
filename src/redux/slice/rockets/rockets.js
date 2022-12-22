@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const GET_ROCKETS = 'spacexproject/redux/slice/rockets/get_rockets';
 export const RESERVE_ROCKET = 'spacexproject/redux/slice/rockets/reserve_rockets';
@@ -8,10 +7,8 @@ const rocketURL = 'https://api.spacexdata.com/v3/rockets';
 
 const initialState = [];
 
-export const getRockets = createAsyncThunk(GET_ROCKETS, () => {
-  console.log('Action called');
-  return axios.get(rocketURL).then((response) => response);
-});
+export const getRockets = createAsyncThunk(GET_ROCKETS,
+  () => fetch(rocketURL).then((response) => response.json()));
 
 const rocketsSlice = createSlice({
   name: 'rockets',
@@ -40,7 +37,7 @@ const rocketsSlice = createSlice({
   },
   extraReducers: {
     [getRockets.fulfilled]: (state, action) => {
-      const rawData = action.payload.data;
+      const rawData = action.payload;
       const newRockets = rawData.map((rocket) => ({
         id: rocket.id,
         name: rocket.rocket_name,

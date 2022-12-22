@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tesing the Header Component Test The header render correctly 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-light bg-light"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="navbar-brand"
+      href="/"
+    >
+      <img
+        className="logo"
+        src="logo.png"
+      />
+       Space Travels' Hub
+    </a>
+    <button
+      aria-controls="responsive-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="responsive-navbar-nav"
+    >
+      <div
+        className="me-auto navbar-nav"
+        onKeyDown={[Function]}
+      />
+      <div
+        className="navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="/"
+          onClick={[Function]}
+          role="button"
+        >
+          Rockets 
+        </a>
+        <a
+          className="nav-link"
+          href="/mission"
+          onClick={[Function]}
+          role="button"
+          tabindex="0"
+        >
+          Missions 
+        </a>
+        <a
+          className="nav-link"
+          href="/myprofile"
+          onClick={[Function]}
+          role="button"
+        >
+          My Profile 
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
