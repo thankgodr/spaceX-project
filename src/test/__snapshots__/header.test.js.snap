@@ -55,7 +55,6 @@ exports[`Tesing the Header Component Test The header render correctly 1`] = `
           href="/mission"
           onClick={[Function]}
           role="button"
-          tabindex="0"
         >
           Missions 
         </a>
